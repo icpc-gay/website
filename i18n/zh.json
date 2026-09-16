@@ -4,6 +4,20 @@
   "title": "ICPC.GAY",
   "subtitle": "编程 · 竞赛 · 创造",
   "description": "一个属于程序员、问题解决者，以及所有热爱程序设计竞赛的人的地方。",
-  "button1": "探索",
-  "button2": "关于"
+  "explore": "探索",
+  "about": "关于",
+  "about_gay": "关于 ICPC.GAY",
+  "what_gay": "ICPC.GAY 是什么？",
+  "what_gay_desc": "一个由程序员创造，也属于程序员的地方。",
+  "why_gay": "为什么是 .GAY(开心)?",
+  "fun": "因为程序员也可以玩得开心。",
+  "fun_claim": "ICPC.GAY 与官方 ICPC 没有隶属关系。这个名字只是一个玩笑式的表达——我们是一群对程序设计竞赛过于热爱的人。",
+  "what_we_believe": "我们的信念",
+  "believe": "编程不只是解决问题。",
+  "believe_claim": " · 它关乎好奇心。\n · 它关乎创造东西。\n · 它关乎从失败中学习。\n · 它关乎为了搞明白一个问题而熬到深夜。\n\n竞赛只是故事的一部分。",
+  "who_is_it_for": "为谁准备的？",
+  "who_for": "所有人。",
+  "who_for_claim": "给刚刚写下第一行代码的人。\n\n给正在准备下一场 ICPC 的选手。\n\n给喜欢捣鼓奇怪项目的程序员。\n\n也给所有觉得编程很有趣的人。",
+  "have_something": "有想法了吗？",
+  "go_build": "去吧！"
 }

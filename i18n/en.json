@@ -4,6 +4,20 @@
   "title": "ICPC.GAY",
   "subtitle": "Code. Compete. Create.",
   "description": "A place for programmers, problem solvers, and everyone who enjoys competitive programming.",
-  "button1": "Explore",
-  "button2": "About"
+  "explore": "Explore",
+  "about": "About",
+  "about_gay": "About ICPC.GAY",
+  "what_gay": "What is ICPC.GAY?",
+  "what_gay_desc": "A place made by programmers, for programmers.",
+  "why_gay": "Why .GAY(Fun)?",
+  "fun": "Because programmers are allowed to have fun too.",
+  "fun_claim": "ICPC.GAY isn't affiliated with ICPC. The name is simply a playful way of saying that we're a bunch of people who are way too passionate about competitive programming.",
+  "what_we_believe": "What we believe",
+  "believe": "Code is more than solving problems.",
+  "believe_claim": "· It's about curiosity.\n · It's about making things.\n · It's about learning from failure.\n · It's about staying up late because you really want to know why it works.\n\nCompetitive programming is only part of the story.",
+  "who_is_it_for": "Who is it for?",
+  "who_for": "For everyone.",
+  "who_for_claim": "For the beginner who just wrote their first program.\n\nFor the contestant preparing for their next ICPC.\n\nFor the programmer who enjoys building weird things.\n\nFor anyone who thinks programming is fun.",
+  "have_something": "Have something to build?",
+  "go_build": "Go build it!"
 }

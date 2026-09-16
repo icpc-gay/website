@@ -1,57 +1,8 @@
-const translations = {
-    zh: {
-        language: "中文",
+const languageButton = document.getElementById("languageButton");
 
-        eyebrow:
-            "国际大学生程序设计竞赛",
+const languageMenu = document.getElementById("languageMenu");
 
-        title:
-            "ICPC.GAY",
-
-        subtitle:
-            "编程 · 竞赛 · 创造",
-
-        description:
-            "一个属于程序员、问题解决者，以及所有热爱程序设计竞赛的人的地方。",
-
-        button1:
-            "探索",
-
-        button2:
-            "关于"
-    },
-    en: {
-        language: "English",
-
-        eyebrow:
-            "INTERNATIONAL COLLEGIATE PROGRAMMING CONTEST",
-
-        title:
-            "ICPC.GAY",
-
-        subtitle:
-            "Code. Compete. Create.",
-
-        description:
-            "A place for programmers, problem solvers, and everyone who enjoys competitive programming.",
-
-        button1:
-            "Explore",
-
-        button2:
-            "About"
-    }
-};
-
-
-const languageButton =
-    document.getElementById("languageButton");
-
-const languageMenu =
-    document.getElementById("languageMenu");
-
-const languageText =
-    document.getElementById("languageText");
+const languageText = document.getElementById("languageText");
 
 
 /*
@@ -61,13 +12,9 @@ const languageText =
 languageButton.addEventListener("click", (event) => {
     event.stopPropagation();
 
-    const open =
-        languageMenu.classList.toggle("open");
+    const open = languageMenu.classList.toggle("open");
 
-    languageButton.classList.toggle(
-        "open",
-        open
-    );
+    languageButton.classList.toggle("open", open);
 });
 
 
@@ -94,72 +41,47 @@ document
 
             event.stopPropagation();
 
-            const language =
-                button.dataset.language;
+            const language = button.dataset.language;
 
             setLanguage(language);
         });
     });
 
-
-function setLanguage(language) {
-
-    const translation =
-        translations[language];
-
+async function setLanguage(language) {
+    const response = await fetch(`/i18n/${language}.json`);
+    const translation = await response.json();
     if (!translation) {
         return;
     }
 
-
     /*
      * Change every translated element
      */
-
-    document
-        .querySelectorAll("[data-i18n]")
-        .forEach((element) => {
-
-            const key =
-                element.dataset.i18n;
-
-            if (translation[key]) {
-                element.textContent =
-                    translation[key];
-            }
-        });
-
+    document.querySelectorAll("[data-i18n]").forEach(element => {
+        const key = element.dataset.i18n;
+        element.textContent = translation[key] ?? key;
+    });
 
     /*
      * Update language button
      */
-
-    languageText.textContent =
-        translation.language;
-
+    languageText.textContent = translation.language;
 
     /*
      * Update HTML language attribute
      */
-
-    document.documentElement.lang =
-        language;
+    document.documentElement.lang = language;
 
 
     /*
      * Remember user's language
      */
-
-    localStorage.setItem(
-        "language",
-        language
-    );
+    localStorage.setItem("language", language);
 
 
     /*
      * Close menu
      */
-
     languageMenu.classList.remove("open");
 
     languageButton.classList.remove("open");
@@ -170,10 +92,8 @@ function setLanguage(language) {
  * Load saved language
  */
 
-const savedLanguage =
-    localStorage.getItem("language") || "zh";
+const savedLanguage = localStorage.getItem("language") || "zh";
 
-
-if (savedLanguage && translations[savedLanguage]) {
+if (savedLanguage) {
     setLanguage(savedLanguage);
 }

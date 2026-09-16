@@ -1,26 +1,4 @@
 const translations = {
-    en: {
-        language: "English",
-
-        eyebrow:
-            "INTERNATIONAL COLLEGIATE PROGRAMMING CONTEST",
-
-        title:
-            "ICPC.GAY",
-
-        subtitle:
-            "Code. Compete. Create.",
-
-        description:
-            "A place for programmers, problem solvers, and everyone who enjoys competitive programming.",
-
-        button1:
-            "Explore",
-
-        button2:
-            "About"
-    },
-
     zh: {
         language: "中文",
 
@@ -41,6 +19,27 @@ const translations = {
 
         button2:
             "关于"
+    },
+    en: {
+        language: "English",
+
+        eyebrow:
+            "INTERNATIONAL COLLEGIATE PROGRAMMING CONTEST",
+
+        title:
+            "ICPC.GAY",
+
+        subtitle:
+            "Code. Compete. Create.",
+
+        description:
+            "A place for programmers, problem solvers, and everyone who enjoys competitive programming.",
+
+        button1:
+            "Explore",
+
+        button2:
+            "About"
     }
 };
 

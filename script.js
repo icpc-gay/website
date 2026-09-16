@@ -171,7 +171,7 @@ function setLanguage(language) {
  */
 
 const savedLanguage =
-    localStorage.getItem("language");
+    localStorage.getItem("language") || "zh";
 
 
 if (savedLanguage && translations[savedLanguage]) {

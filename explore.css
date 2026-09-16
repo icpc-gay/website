@@ -49,7 +49,9 @@ body::before {
 .eyebrow { margin: 0 0 20px; font-size: 12px; font-weight: 900; letter-spacing: 4px; }
 h1 { margin: 0; font-size: clamp(74px, 13vw, 174px); line-height: .78; letter-spacing: -12px; font-weight: 1000; transform: rotate(-2deg); white-space: nowrap; }
 h1 span:nth-child(1) { color: #ed4b2f; } h1 span:nth-child(2) { color: #f3b51b; } h1 span:nth-child(3) { color: #2675d8; } h1 span:nth-child(4) { color: #6c40b4; } h1 b { color: #111; }
-.intro > p { max-width: 270px; margin: 0 0 4px; font-size: 17px; line-height: 1.5; font-weight: 700; }
+.subtitle { display: flex; gap: 0.08em; margin: 25px 0 0; font-size: clamp(21px, 3.7vw, 50px); line-height: 1; letter-spacing: -2px; font-weight: 1000; transform: rotate(-1deg); }
+.subtitle span:nth-child(1) { color: #ed4b2f; } .subtitle span:nth-child(2) { color: #f3b51b; } .subtitle span:nth-child(3) { color: #2675d8; } .subtitle span:nth-child(4) { color: #6c40b4; } .subtitle span:nth-child(5) { color: #ed4b2f; }
+.intro > p:not(.subtitle) { max-width: 270px; margin: 0 0 4px; font-size: 17px; line-height: 1.5; font-weight: 700; }
 
 .site-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .site-card { position: relative; min-height: 210px; padding: 25px; color: var(--ink); text-decoration: none; border: 2px solid var(--ink); box-shadow: 7px 7px 0 var(--ink); transition: transform .18s ease, box-shadow .18s ease; }

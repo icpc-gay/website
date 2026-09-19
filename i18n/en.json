@@ -19,5 +19,6 @@
   "who_for": "For everyone.",
   "who_for_claim": "For the beginner who just wrote their first program.\n\nFor the contestant preparing for their next ICPC.\n\nFor the programmer who enjoys building weird things.\n\nFor anyone who thinks programming is fun.",
   "have_something": "Have something to build?",
-  "go_build": "Go build it!"
+  "go_build": "Go build it!",
+  "blog": "Author's Blog"
 }
